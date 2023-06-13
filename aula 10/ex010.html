@@ -12,11 +12,15 @@
     div#area {
       background-color: rgb(42, 189, 42);
       color: white;
-      width: 200px;
-      height: 200px;
-      line-height: 200px;
+      width: 250px;
+      height: 250px;
+      line-height: 250px;
       text-align: center;
       border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   </style>
 </head>
@@ -31,6 +35,7 @@
     a.addEventListener('click', clicar)
     a.addEventListener('mouseenter', entrar)
     a.addEventListener('mouseout', sair)
+
     function entrar() {
       a.innerHTML = 'Entrou! (lá ele)'
     }
