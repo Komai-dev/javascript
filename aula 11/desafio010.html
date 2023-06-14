@@ -4,8 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desafio do ex009.js</title>
+  <style>
+    body {
+      font: normal 20pt arial;
+    }
+    input {
+      font: normal 18pt arial;
+    }
+  </style>
 </head>
 <body>
+
+  <h1>Nacionalidade:</h1>
   
+  <label for="país">Vivendo em: </label>
+  <input type="text" name="país" id="país"> <br>
+
+  <input type="button" value="Verificar" onclick="verify()">
+
+  <p id="result">Você é...</p>
+
+  <script>
+
+  function verify() {
+    
+    var país = window.document.getElementById('país')
+    var result = window.document.getElementById('result')
+
+    if (país == 'Brasil') {
+      result.innerHTML = 'Você é brasileiro!'
+    } else {
+      result.innerHTML = 'Você é estrangeiro!'
+    }
+  }
+
+  </script>
 </body>
 </html>
