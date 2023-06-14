@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desafio do ex009.js</title>
+  <title>Desafio do ex009.javascript</title>
   <style>
+    * {
+      margin: 10px;
+    }
+
     body {
       font: normal 20pt arial;
     }
+
     input {
       font: normal 18pt arial;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Nacionalidade:</h1>
-  
-  <label for="país">Vivendo em: </label>
-  <input type="text" name="país" id="país"> <br>
+  <h1>Sistema de Verificação de Cidadania Brasileira.</h1>
 
-  <input type="button" value="Verificar" onclick="verify()">
-
-  <p id="result">Você é...</p>
+  <p>Digite em qual país você nasceu?</p>
+  <input type="text" name="paísDigitado" id="paísDigitado">
+  <input type="button" value="Verificar" onclick="euQueMando()" id="button">
+  <div id="resultado">
+    <p>Resultado: </p>
+  </div>
 
   <script>
-
-  function verify() {
     
-    var país = window.document.getElementById('país')
-    var result = window.document.getElementById('result')
+    function euQueMando() {
+      var você = document.getElementById('paísDigitado')
+      var e = document.getElementById('resultado')
+      var foda = (você.value).toUpperCase()
 
-    if (país == 'Brasil') {
-      result.innerHTML = 'Você é brasileiro!'
-    } else {
-      result.innerHTML = 'Você é estrangeiro!'
+      if (foda == 'BRASIL') {
+        e.innerHTML = `Você nasceu em ${foda.toUpperCase()}. Você é brasileiro!`
+      }
+      else {
+        e.innerHTML = `Você nasceu em ${foda.toUpperCase()}. Você é gringo!`
+      }
     }
-  }
 
   </script>
 </body>
+
 </html>
