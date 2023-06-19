@@ -3,11 +3,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   background: rgb(70, 142, 236);
   color: white;
+  margin: 45px;
 }
 
 header {
@@ -24,6 +26,10 @@ section {
   
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.424);
+}
+div {
+  text-align: center;
+  padding: 5px;
 }
 
 footer {
