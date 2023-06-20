@@ -13,20 +13,25 @@
 
   <section>
     <div id="container">
-      <form action="#">
-        <label for="by">Ano de nascimento: <input required type="datetime" name="by" id="by"></label>
-        <br>
-        <label for="sexo">Sexo: 
-          <input type="radio" name="sexo" id="femsex"> <label for="femsex">Feminino</label>
-          <input type="radio" name="sexo" id="mascsex"> <label for="mascsex">Masculino</label>
-          <input type="radio" name="sexo" id="outros"> <label for="outro">Outro</label>
-        </label>
+
+      <div>
+        <form action="#">
+          <label for="by">Ano de nascimento: <input required type="number" name="by" id="by"></label>
           <br>
-        <input type="button" value="Verificar">
+          <label for="sexo">Sexo: 
+            <input checked type="radio" name="sexo" id="femsex"> <label for="femsex">Feminino</label>
+            <input type="radio" name="sexo" id="mascsex"> <label for="mascsex">Masculino</label>
+            <input type="radio" name="sexo" id="outros"> <label for="outro">Outro</label>
+          </label>
+            <br>
+          <input type="button" value="Verificar" onclick="verificar()">
+        </form>
+      </div>
 
+      <div id="resultado">
         <p>Preencha os dados acima para ver o resultado!</p>
-      </form>
 
+      </div>
 
     </div>
   </section>
