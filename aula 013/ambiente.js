@@ -1,5 +1,5 @@
 var random = 1
-while (random <= 15) {
+do {
   console.log(`Trabalha mais ${random}`)
   random++
-}
+} while (random <= 8)
