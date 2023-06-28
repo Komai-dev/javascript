@@ -1,16 +1,18 @@
-var inicNumber = document.getElementById('inic')
-var inic = Number.parseInt(inicNumber)
+function clicar() {
+  var entrada = document.getElementById('inic')
+  var inic = Number.parseInt(entrada.value)
+  
+  var final = document.getElementById('fim')
+  var fim = Number.parseInt(final.value)
+  
+  var diff = document.getElementById('passo')
+  var passo = Number.parseInt(diff.value)
 
-var fimNumber = document.getElementById('fim')
-var fim = Number.parseInt(fimNumber)
+  var calc = inic + passo
+  var result = document.querySelector('p#resultado')
 
-var passoNumber = document.getElementById('passo')
-var passo = Number.parseInt(passoNumber)
-
-var resultado = document.querySelector('p#resultado')
-
-function clicou(){
-  for (var inic = 0 ; inic <= fim ; inic + passo) {
-    resultado.innerHTML = `Contando: <br> ${inic} 👉 ${inic+passo} `
+  for (soma = inic ; calc <= fim ; inic + passo) {
+    result.innerHTML = `Contando: <br> 
+     ${soma} 👉 ${calc}`
   }
 }
