@@ -3,32 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Super Contador</title>
   <link rel="stylesheet" href="geral.css">
 </head>
 <body>
   <header>
-    <h1>Vamos contar!</h1>
+
   </header>
-    <section id="container">
-      <div id="1">
-        <form action="#" method="get">
-          <p><label for="inic">Início: <input type="number" name="inic" id="inic"></label></p>
-          <p><label for="fim">Fim: &nbsp; &nbsp;<input type="number" name="fim" id="fim"></label></p>
-          <p><label for="passo">Passo: <input type="number" name="passo" id="passo"></label></p>
-          <input type="button" value="Contar" onclick="clicou()">
-      </form>
-      </div>
-
-      <div id="2">
-        <p id="resultado">Preparando contagem...</p>
-      </div>
-    </section>
-    <footer>
-      <p>&copy; CursoemVideo</p>
-    </footer>
-
-  <script src="script.js">
-  </script>
+  <section>
+    <div id="dados">
+      <p>Início: <input type="number" name="início" id="txti"></p>
+      <p>Fim: <input type="number" name="fim" id="txtf"></p>
+      <p>Passo: <input type="number" name="passo" id="txtp"></p>
+      <p><input type="button" value="Contar" onclick="contar()"></p>
+    </div>
+    <div id="res">
+      Preparando a contagem...
+    </div>
+  </section>
+  <footer>
+    <p>&copy; CursoemVideo</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
