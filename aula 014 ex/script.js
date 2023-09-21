@@ -44,7 +44,7 @@ function contar() {
   var calc = inic + passo
   var result = document.querySelector('p#resultado')
 
-  for (var soma = inic ; calc <= fim ; inic + passo) {
+  for (var soma = inic ; soma <= fim ; soma + passo) {
     result.innerHTML = `Contando: <br> 
      ${soma} 👉 ${calc}`
   }
